@@ -1,0 +1,2 @@
+criar um novo component na pasta components
+ng generate component components/home
