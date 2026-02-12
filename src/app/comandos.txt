@@ -1,2 +1,5 @@
 criar um novo component na pasta components
 ng generate component components/home
+
+criar um novo serviço
+ng generate service services/enviaFormulario

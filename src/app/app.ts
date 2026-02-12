@@ -10,4 +10,11 @@ import { Home } from './components/home/home';
 })
 export class App {
   protected readonly title = signal('angular-app');
+
+  submit(event: any) {
+    console.log(event)
+  }
+  logar(event: string) {
+    console.log(event);
+  }
 }

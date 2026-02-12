@@ -1,1 +1,19 @@
-<p>Hellow World!</p>
+<p>Hellow World! This is HOME! I'm {{name}}</p>
+<!-- <button [attr.customizado]="idButton"></button> Atributo customizado -->
+<button (click)="submit()">Clique</button> <!-- Evento de clique -->
+
+@if (deveMostrarTitulo){ <!-- Condicional para mostrar o título -->
+    <h1>Verdadeiro</h1>
+} @else if (name == "Murilo"){  <!-- Outra condição para mostrar um título específico -->
+    <h1>Olá, Murilo!</h1>
+}
+
+@else { <!-- Caso contrário, mostrar outro título -->
+    <h1>Não foi verdadeiro</h1>
+}
+
+@for (item of listItems; track item){  <!-- Loop para iterar sobre uma lista de itens, qualquer alteração na lista será rastreada -->
+    <p>{{item}}</p> 
+}
+
+<h1>{{minhaInfoExterna}}</h1> <!-- Exibe o valor de uma variável externa -->
